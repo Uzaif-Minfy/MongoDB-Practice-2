@@ -1,5 +1,7 @@
 # MongoDB Aggregation Framework Assignment - EASY
 
+## 1. List All Products in the "Electronics" Category:
+
 ```
 db.products.aggregate([{
 $match: {
@@ -8,7 +10,7 @@ category: "Electronics"}
 ```
 ![alt text](image-1.png)
 
-2
+## 2. Count Products per Category:
 ```
 db.products.aggregate([{
 $group: {
@@ -18,7 +20,7 @@ count: {$sum: 1}
 ```
 ![alt text](image.png)
 
-3
+## 3. Product Names and Prices, Sorted by Price (Descending):
 ```
 db.products.aggregate([
   {$project: {
